@@ -154,8 +154,29 @@ console.log('Rose Olsen spent  $', rose_amount_spent_per_vote.toFixed(2), ' per 
 console.log('Leonard Willis spent  $', leo_amount_spent_per_vote.toFixed(2), ' per vote');
 console.log('Nathaniel Taylor spent  $', nath_amount_spent_per_vote.toFixed(2), ' per vote');
 
-// let win_or_lose1: Array<string> = [];
-// let win_or_lose2: Array<string> = [];
-// let win_or_lose3: Array<string> = [];
-// let win_or_lose4: Array<string> = [];
-// let win_or_lose5: Array<string> = [];
+let win_or_lose1: Array<number> = [ed_per_per[0], rose_per_per[0], leo_per_per[0], nath_per_per[0]];
+let win_or_lose2: Array<number> = [ed_per_per[1], rose_per_per[1], leo_per_per[1], nath_per_per[1]];
+let win_or_lose3: Array<number> = [ed_per_per[2], rose_per_per[2], leo_per_per[2], nath_per_per[2]];
+let win_or_lose4: Array<number> = [ed_per_per[3], rose_per_per[3], leo_per_per[3], nath_per_per[3]];
+let win_or_lose5: Array<number> = [ed_per_per[4], rose_per_per[4], leo_per_per[4], nath_per_per[4]];
+
+win_or_lose1 = win_or_lose1.sort((a, b) => b - a);
+win_or_lose2 = win_or_lose2.sort((a, b) => b - a);
+win_or_lose3 = win_or_lose3.sort((a, b) => b - a);
+win_or_lose4 = win_or_lose4.sort((a, b) => b - a);
+win_or_lose5 = win_or_lose5.sort((a, b) => b - a);
+
+if (win_or_lose1[0] > 50) console.log('\nPrecint1: winner is --');
+else console.log('\nPrecint1: Leonard Willis, Edward Underwood');
+
+if (win_or_lose2[0] > 50) console.log('Precint2: winner is Leonard Willis');
+else console.log('Precint2: Edward Underwood, Rose Olson');
+
+if (win_or_lose3[0] > 50) console.log('Precint3: winner is Edward Underwood');
+else console.log('Precint3: --');
+
+if (win_or_lose4[0] > 50) console.log('Precint4: winner is Leonard Willis');
+else console.log('Precint4: --');
+
+if (win_or_lose5[0] > 50) console.log('Precint5: winner is Leonard Willis');
+else console.log('Precint5: --');
