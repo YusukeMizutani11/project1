@@ -7,7 +7,6 @@
  */
 
 function merge(arr1: Array<number>, arr2: Array<number>): Array<number> {
-  // return arr1.concat(arr2);
   const arr3: Array<number> = [];
   const max_length: number = Math.max(arr1.length, arr2.length);
 
